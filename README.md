@@ -10,6 +10,7 @@ This is a sample website built using HTML, CSS, and VS Studio's AI assistant.
 ## Technologies Used
 - HTML
 - CSS
+- VS Studio and its AI assistant 
 - GitHub Pages
 
 ## Live Site
