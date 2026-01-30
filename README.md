@@ -1,2 +1,2 @@
-# websiteworkshop
+# AIwebsiteworkshop
 This is for hosting
