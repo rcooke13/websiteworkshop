@@ -1,0 +1,14 @@
+:root{
+  /* Saved first option (softer dark) */
+  --bg: #0F1418;
+  --surface: #151A1E;
+  --text: #D0CEC9;
+  --primary: #00B3A6;
+  --secondary: #D9A441;
+  --muted: #F2F0EC;
+  --cta: #FF6159;
+  --content-bg: var(--muted);
+  --content-text: #121212;
+}
+
+/* Usage: link this file or copy the variables into :root to restore the first theme */

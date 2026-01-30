@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" width="200" height="140" aria-labelledby="title desc">
+  <title id="title">Writing icon</title>
+  <desc id="desc">Stylized pen and paper icon representing creative writing (original).</desc>
+  <rect x="8" y="8" width="184" height="124" rx="10" fill="#FBFBFA" stroke="#0B0F13" stroke-width="2"/>
+  <!-- paper fold -->
+  <path d="M150 8 H188 V46" fill="#F2F0EC"/>
+
+  <!-- ruled lines -->
+  <g stroke="#E1DFDB" stroke-width="2" stroke-linecap="round">
+    <line x1="20" y1="36" x2="170" y2="36"/>
+    <line x1="20" y1="56" x2="170" y2="56"/>
+    <line x1="20" y1="76" x2="170" y2="76"/>
+  </g>
+
+  <!-- pen (quill-like) -->
+  <g transform="translate(28,18) rotate(-18)">
+    <path d="M90 70 C92 66, 110 48, 118 38 C130 24, 110 14, 96 26 C84 36, 76 54, 90 70 Z" fill="#00B3A6"/>
+    <rect x="84" y="68" width="56" height="8" rx="3" fill="#0B0F13" transform="rotate(-8 112 72)"/>
+    <rect x="84" y="76" width="46" height="6" rx="3" fill="#D9A441" transform="rotate(-8 112 79)"/>
+  </g>
+
+  <!-- small accent dots -->
+  <circle cx="40" cy="112" r="3" fill="#A8A6A3"/>
+  <circle cx="52" cy="112" r="3" fill="#A8A6A3"/>
+  <circle cx="64" cy="112" r="3" fill="#A8A6A3"/>
+</svg>

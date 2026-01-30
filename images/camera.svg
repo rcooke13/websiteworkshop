@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" width="200" height="140" aria-labelledby="title desc">
+  <title id="title">Camera icon</title>
+  <desc id="desc">Simple stylized camera icon for filmmaking sites (original).</desc>
+  <rect x="6" y="30" width="188" height="84" rx="10" fill="#0F1418"/>
+  <rect x="14" y="38" width="160" height="68" rx="8" fill="#FBFBFA"/>
+  <!-- lens -->
+  <circle cx="100" cy="72" r="22" fill="#0B0F13"/>
+  <circle cx="100" cy="72" r="14" fill="#00B3A6"/>
+  <circle cx="100" cy="72" r="6" fill="#FBFBFA"/>
+  <!-- top viewfinder -->
+  <rect x="30" y="12" width="42" height="18" rx="4" fill="#151A1E"/>
+  <!-- shutter button -->
+  <rect x="160" y="18" width="18" height="8" rx="3" fill="#D9A441"/>
+  <!-- small accents -->
+  <g fill="#0B0F13">
+    <circle cx="60" cy="52" r="3"/>
+    <circle cx="140" cy="52" r="3"/>
+  </g>
+</svg>

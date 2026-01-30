@@ -1,0 +1,172 @@
+:root{
+  /* User-provided darker theme */
+  --bg: #1E2A35;
+  --surface: #243544;
+  --text: #D0CEC9;
+  --primary: #007F78;        /* Darker teal */
+  --secondary: #B38B1E;      /* Darker gold */
+  --muted: #F2F0EC;
+  --cta: #B83834;            /* Slightly darker red for improved contrast */
+  --content-bg: #F2F0EC;
+  --content-text: #121212;
+  --footer-space: 110px;
+}
+
+/* Skip link (visually hidden until focused) */
+.skip-link{
+  position:absolute;left:12px;top:12px;background:var(--primary);color:white;padding:8px 12px;border-radius:6px;z-index:40;transform:translateY(-200%);transition:transform .18s ease-in-out;}
+.skip-link:focus{transform:translateY(0%);outline:3px solid rgba(255,255,255,0.12)}
+
+/* Visible focus outlines for keyboard navigation */
+a:focus-visible, button:focus-visible, .btn:focus-visible{
+  outline:3px solid rgba(0,179,166,0.18);
+  outline-offset:3px;
+}
+
+/* Make nav links accessible on focus */
+nav.site-nav a:focus-visible{box-shadow:0 0 0 3px rgba(0,179,166,0.12);border-radius:6px}
+
+/* Reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  font-size:16px;
+  font-weight:400;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+/* Page container */
+header.site-header{
+  background:linear-gradient(180deg, rgba(0,0,0,0.18), transparent), var(--surface);
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  position:relative;
+  z-index:10;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+  /* subtle lift */
+  box-shadow:0 6px 14px rgba(3,6,10,0.08);
+}
+
+/* decorative accent line under header using site accents */
+.site-header::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-1px;
+  height:4px;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  pointer-events:none;
+}
+
+/* Alternate header color example: apply class="site-header alt" to the header
+   or add the class to the element: <header class="site-header alt"> */
+.site-header.alt{
+  --surface: #10323a; /* deep teal header */
+}
+
+/* If header text needs adjusting for stronger contrast, use this rule */
+.site-header.alt .site-title a,
+.site-header.alt .host-note,
+.site-header.alt nav a{
+  color: rgba(208,206,201,0.96);
+}
+
+.site-title{font-size:1.15rem;margin:0;font-weight:700}
+.site-title a{color:var(--text);text-decoration:none}
+
+/* logo in header */
+.site-logo{width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:12px;border-radius:6px}
+
+/* Style plain h1/nav so existing HTML looks correct */
+h1{color:var(--text);font-weight:700;margin:20px 0;text-align:left}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--primary)}
+
+/* Host note in header (muted, small) */
+.host-note{
+  color:rgba(208,206,201,0.9);
+  font-size:0.85rem;
+  margin-left:12px;
+}
+
+nav.site-nav a{
+  color:var(--text);
+  text-decoration:none;
+  margin-left:14px;
+  padding:6px 8px;
+  border-radius:6px;
+  font-weight:600;
+}
+nav.site-nav a:hover{color:var(--primary);background:rgba(255,255,255,0.04)}
+
+main{
+  max-width:980px;
+  margin:28px auto;
+  padding:0 18px;
+}
+
+main{flex:1; padding-bottom:var(--footer-space)}
+
+/* Make main content readable by placing it on a light panel */
+main > *{
+  background:var(--content-bg);
+  color:var(--content-text);
+  padding:22px;
+  border-radius:10px;
+  box-shadow:0 8px 22px rgba(3,6,10,0.18);
+}
+
+img{max-width:100%;height:auto;display:block}
+
+.hero{
+  display:flex;flex-direction:column;gap:16px;align-items:start;gap:20px;
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:16px;border-radius:10px;margin-bottom:16px;
+}
+
+.btn{
+  display:inline-block;padding:10px 16px;border-radius:8px;color:#FFFFFF !important;background:var(--primary);text-decoration:none;font-weight:700;
+}
+.btn--cta{background:var(--cta);color:white}
+
+footer{opacity:0.98;font-size:0.9rem;text-align:center;padding:14px 18px;color:var(--muted);border-top:3px solid rgba(255,255,255,0.06);background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);box-shadow:0 -6px 18px rgba(3,6,10,0.12);position:fixed;left:12px;right:12px;bottom:12px;border-radius:10px;max-width:calc(100% - 24px);z-index:20}
+
+@media(min-width:700px){
+  .hero{flex-direction:row;align-items:center}
+  .hero-media{flex:0 0 320px}
+  .hero-content{flex:1}
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #006633;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #003366;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
