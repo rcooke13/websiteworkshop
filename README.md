@@ -1,6 +1,6 @@
 # AI Website
 
-This is a sample website built using HTML and CSS.
+This is a sample website built using HTML, CSS, and VS Studio's AI assistant.
 
 ## Purpose
 - Showcase my hobbies, projects, or side business
