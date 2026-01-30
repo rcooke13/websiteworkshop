@@ -2,7 +2,7 @@
 This is a sample website built using HTML, CSS, and VS Studio's AI assistant.
 
 # Purpose
-* Showcase my hobbies, projects or side business(s)
+* Showcase my hobbies, projects, or side business
 * Practice basic web development
 * Deploy a live website using Github Pages
 
