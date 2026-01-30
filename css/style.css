@@ -144,7 +144,13 @@ img{max-width:100%;height:auto;display:block}
 }
 .btn--cta{background:var(--cta);color:white}
 
-footer{opacity:0.98;font-size:0.9rem;text-align:center;padding:14px 18px;color:var(--muted);border-top:3px solid rgba(255,255,255,0.06);background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);box-shadow:0 -6px 18px rgba(3,6,10,0.12);position:fixed;left:12px;right:12px;bottom:12px;border-radius:10px;max-width:calc(100% - 24px);z-index:20}
+footer{opacity:0.98;font-size:0.9rem;text-align:center;padding:14px 18px;color:rgba(208,206,201,0.92);border-top:3px solid rgba(255,255,255,0.06);background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);box-shadow:0 -6px 18px rgba(3,6,10,0.12);position:fixed;left:12px;right:12px;bottom:12px;border-radius:10px;max-width:calc(100% - 24px);z-index:20}
+
+/* Make the small copyright text dark on light schemes and light on dark schemes */
+footer small{color:#222222}
+@media (prefers-color-scheme: dark){
+  footer small{color:var(--muted)}
+}
 
 @media(min-width:700px){
   .hero{flex-direction:row;align-items:center}
